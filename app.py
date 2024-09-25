@@ -41,6 +41,7 @@ new_user_ratings = pd.Series({
 
 ratings.loc['NewUser'] = new_user_ratings
 
+
 similar_user = recommend_personality(ratings, 'NewUser')
 if st.button("結果を見る"):
     st.write(f'あなたに最も似た性格タイプのユーザーは: {similar_user} です！')
